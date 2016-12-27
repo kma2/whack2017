@@ -279,7 +279,7 @@ function loadImage(src, width, height,cb){
 }
 
 function drawImageToCanvas(canvas, img){
-    var image = loadImage(img, 750, 207,function(){
+    var image = loadImage(img, 0, 0,function(){
         canvas.drawImage(image, -150, 0 )
 
         var canvas3d = new THREE.CSS3DObject(document.getElementById('base-canvas'))
@@ -348,18 +348,11 @@ Scroller.init = function(){
 }
 
 
-
-var mainCanvas = getCanvasContext('base-canvas')
+var mainCanvas = getCanvasContext('base-canvas');
+drawImageToCanvas(mainCanvas, 'img/theme__title.png');
 // drawImageToCanvas(mainCanvas, 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/152724/big_boom_arrow.png')
-drawImageToCanvas(mainCanvas, 'img/theme__title.png')
 
 
-
-// temporary trigger
-// setTimeout(function(){
-//    tl.play()
-
-// },5000)
 
 // Kick everything off
 Boom.init()

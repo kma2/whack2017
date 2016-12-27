@@ -41,15 +41,17 @@ body {
 html {
 	height: 100%;
   overflow-x: hidden;
+
   /*padding: 0;*/
 }
 
 body {
   /*min-height: 20000px;
-    overflow: scroll;
-    padding: 0;
-    margin:0;*/
-  background: #000;
+  overflow: scroll;
+  padding: 0;
+  margin:0;*/
+
+  background: #343653;
 	position: relative;
 	font-family: "Circular", "lato", "helvetica neue", "helvetica", "arial", sans-serif;
 	font-style: normal;
@@ -164,12 +166,15 @@ button {
   padding: 25vh 6vh 25vh 6vh;
 }
 
-
 .content__section1, .content__section3, .content__section5 {
   padding: 18vh 6vh 18vh 6vh;
-  /*background-color: #343653;*/
   background-color: #3A3F5E;
   position: relative;
+}
+
+.content__section6, .content__section2 {
+  background-image: url(../img/pattern4.png);
+  color: #2E3044;
 }
 
 .content__section1:before, .content__section3:before, .content__section5:before {
@@ -308,14 +313,22 @@ button {
 }
 
 .story p {
+  color: #2E3044;
   margin-bottom: 0px;
   -ms-transform: translate(0px, -40px); /* IE 9 */
   -webkit-transform: translate(0px, -40px); /* Safari */
   transform: translate(0px, -40px);
 }
 
-.story p.school {
+p.school {
   margin-bottom: 10px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+p.name {
+  font-size: 1.3em;
+  font-weight: 600;
 }
 
 #pic1, #pic2, #pic3 {
@@ -335,22 +348,9 @@ img.story__photo {
   border: 10px solid white;
   border-bottom: 70px solid white;
   -webkit-transition: -webkit-transform .15s linear;
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.50);
-  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.50);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.20);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.20);
 }
-
-p.name {
-  font-size: 1.3em;
-  color: white;
-  font-weight: 600;
-}
-
-p.school {
-  font-size: 0.9em;
-  color: white;
-  font-weight: 600;
-}
-
 
 /* FAQ */
 
@@ -400,11 +400,6 @@ hr {
   border-bottom: 1px solid #D5D5D5;
   margin-top: 10vh;
   margin-bottom: 10vh;
-}
-
-.content__section6 {
-  background-image: url(../img/pattern2.png);
-  color: #2E3044;
 }
 
 .gold__sponsors {
