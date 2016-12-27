@@ -530,6 +530,9 @@ footer {
   max-height: 85px;
   margin: auto;
   padding-bottom: 15px;
+  -ms-transform: translate(-5px, 0px); /* IE 9 */
+  -webkit-transform: translate(-5px, 0px); /* Safari */
+  transform: translate(-5px, 0px);
 }
 
 
