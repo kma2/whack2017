@@ -19,12 +19,37 @@
   font-style: normal;
 }
 
-html {
+/*html {
 	height: 100%;
   overflow-x: hidden;
 }
 
 body {
+	position: relative;
+	font-family: "Circular", "lato", "helvetica neue", "helvetica", "arial", sans-serif;
+	font-style: normal;
+	line-height: 1.5;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga" on;
+	overflow-x: hidden;
+}*/
+
+html {
+	height: 100%;
+  overflow-x: hidden;
+  /*padding: 0;*/
+}
+
+body {
+  /*min-height: 20000px;
+    overflow: scroll;
+    padding: 0;
+    margin:0;*/
+  background: #000;
 	position: relative;
 	font-family: "Circular", "lato", "helvetica neue", "helvetica", "arial", sans-serif;
 	font-style: normal;
@@ -127,7 +152,7 @@ button {
 }
 
 .background {
-	background-image: url(../img/pattern.png);
+	background-image: url(../img/pattern3.png);
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -142,7 +167,8 @@ button {
 
 .content__section1, .content__section3, .content__section5 {
   padding: 18vh 6vh 18vh 6vh;
-  background-color: #343653;
+  /*background-color: #343653;*/
+  background-color: #3A3F5E;
   position: relative;
 }
 
@@ -153,7 +179,7 @@ button {
   top: -30px;
   width: 100%;
   height: 80px;
-  background: #343653;
+  background: #3A3F5E;
   -webkit-transform: skewY(2.5deg);
   -moz-transform: skewY(2.5deg);
   -ms-transform: skewY(2.5deg);
@@ -169,7 +195,8 @@ button {
   bottom: -30px;
   width: 100%;
   height: 80px;
-  background: #343653;
+  /*background: #343653;*/
+  background: #3A3F5E;
   -webkit-transform: skewY(2.5deg);
   -moz-transform: skewY(2.5deg);
   -ms-transform: skewY(2.5deg);
@@ -195,17 +222,6 @@ button {
   font-size: 2.3em;
   line-height: 1.2;
   padding-bottom: 15px;
-}
-
-.cover {
-  margin-top: 12vh;
-  height: 100vh;
-}
-
-.cover__container {
-  max-width: 1080px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 @-ms-keyframes wiggle {
@@ -262,6 +278,26 @@ button {
   -webkit-animation: wiggle .4s 2;
   animation: wiggle .4s 2;
 }
+
+
+/* COVER */
+
+.cover {
+  margin-top: 12vh;
+  height: 100vh;
+}
+
+.cover__container {
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.base-canvas {
+  /*top: 0px;*/
+  display: inline-block;
+}
+
 
 /* STORIES */
 
@@ -412,7 +448,7 @@ hr {
 }
 
 .day__name span {
-  background-color: #37BDEF;
+  background-color: #FB627A;
   padding: 5px 10px;
 }
 
