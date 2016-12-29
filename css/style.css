@@ -644,8 +644,8 @@ table, th, td {
     margin-bottom: 10px;
 	}
 
-	p {
-    font-size: 14px;
+	p, li, th, td {
+    font-size: 16px;
 	}
 
 	button {
