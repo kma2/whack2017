@@ -19,25 +19,6 @@
   font-style: normal;
 }
 
-/*html {
-	height: 100%;
-  overflow-x: hidden;
-}
-
-body {
-	position: relative;
-	font-family: "Circular", "lato", "helvetica neue", "helvetica", "arial", sans-serif;
-	font-style: normal;
-	line-height: 1.5;
-	font-size: 20px;
-	color: #FFFFFF;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-moz-font-feature-settings: "liga" on;
-	overflow-x: hidden;
-}*/
-
 html {
 	height: 100%;
   overflow-x: hidden;
@@ -176,7 +157,7 @@ button {
   position: relative;
 }
 
-.content__section6, .content__section2 {
+.content__section2, .content__section6 {
   background-image: url(../img/pattern4.png);
   color: #2E3044;
 }
@@ -220,14 +201,14 @@ button {
   text-align: left;
 }
 
-.work__description, .cover__intro {
+.description, .cover__intro {
 	font-size: 20px;
 	margin-bottom: 30px;
 	color: #E4E5EA;
 	padding-top: 0;
 }
 
-.work__title {
+.title {
   font-size: 2.3em;
   line-height: 1.2;
   padding-bottom: 15px;
@@ -595,7 +576,7 @@ section.sponsorship {
   padding: 100px 0px 150px 0;
 }
 
-p.work__description {
+p.description {
   color: #2E3044;
 }
 
@@ -654,7 +635,7 @@ table, th, td {
     padding: 7px 25px;
 	}
 
-	.work__description, .cover__intro {
+	.description, .cover__intro {
     font-size: 16px;
     margin-bottom: 20px;
 	}

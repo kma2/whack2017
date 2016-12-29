@@ -1,3 +1,4 @@
+// code for theme title shatter effect
 
 ;(function() {
 
