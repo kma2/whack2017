@@ -589,6 +589,7 @@ footer {
 /* SPONSORSHIP PAGE */
 
 section.sponsorship {
+  background-image: url(../img/pattern2.png);
   background-color: white;
   color: #2E3044;
   padding: 100px 0px 150px 0;
