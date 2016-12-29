@@ -73,9 +73,13 @@ body {
 }
 
 a {
-  color: #FF8B89;
+  color: #FB627A;
   font-weight: 600;
 	text-decoration: none;
+}
+
+.content__section4 a {
+  color: #FF8B89;
 }
 
 h1 {
@@ -228,6 +232,9 @@ button {
   line-height: 1.2;
   padding-bottom: 15px;
 }
+
+
+/* ANIMATION */
 
 @-ms-keyframes wiggle {
   0% {
@@ -576,6 +583,38 @@ footer {
   -ms-transform: translate(-5px, 0px); /* IE 9 */
   -webkit-transform: translate(-5px, 0px); /* Safari */
   transform: translate(-5px, 0px);
+}
+
+
+/* SPONSORSHIP PAGE */
+
+section.sponsorship {
+  background-color: white;
+  color: #2E3044;
+  height: 100%;
+  width: 100%;
+  padding: 100px 0px 150px 0;
+}
+
+p.work__description {
+  color: #2E3044;
+}
+
+th, td {
+  padding: 15px 50px 15px 0;
+  text-align: center;
+}
+
+th#perk, td#perk {
+  text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 
