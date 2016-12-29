@@ -358,9 +358,9 @@ img.story__photo {
 }
 
 .pic3 {
-  -ms-transform: translate(0px, -110px);
-  -webkit-transform: translate(0px, -110px);
-  transform: translate(0px, -110px);
+  -ms-transform: translate(0px, -60px);
+  -webkit-transform: translate(0px, -60px);
+  transform: translate(0px, -60px);
 }
 
 
@@ -646,9 +646,9 @@ footer {
   }
 
   .pic3 {
-    -ms-transform: translate(0px, -50px);
-    -webkit-transform: translate(0px, -50px);
-    transform: translate(0px, -50px);
+    -ms-transform: translate(0px, -20px);
+    -webkit-transform: translate(0px, -20px);
+    transform: translate(0px, -20px);
   }
 
 	.footer {
