@@ -27,8 +27,8 @@ html {
 }
 
 body {
-  /*min-height: 20000px;
-  overflow: scroll;
+  /*min-height: 10000px;*/
+  /*overflow: scroll;
   padding: 0;
   margin:0;*/
 
@@ -109,15 +109,6 @@ p {
 	font-weight: 400;
 	margin-bottom: 20px;
 	color: rgba(255, 255, 255, 0.8);
-}
-
-.cover__headline {
-  margin-bottom: 30px;
-}
-
-.cover__intro {
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 button {
@@ -280,15 +271,28 @@ button {
   height: 100vh;
 }
 
+.cover__headline {
+  margin-bottom: 30px;
+}
+
+.cover__intro {
+  max-width: 600px;
+  margin: 0 auto;
+  -ms-transform: translate(0px, -99vh);
+  -webkit-transform: translate(0px, -99vh);
+  transform: translate(0px, -99vh);
+}
+
+.cover__applybutton {
+  -ms-transform: translate(0px, -96vh);
+  -webkit-transform: translate(0px, -96vh);
+  transform: translate(0px, -96vh);
+}
+
 .cover__container {
   max-width: 1080px;
   margin: 0 auto;
   text-align: center;
-}
-
-.base-canvas {
-  /*top: 0px;*/
-  display: inline-block;
 }
 
 
@@ -658,6 +662,20 @@ table, th, td {
     margin-bottom: 20px;
 	}
 
+  .cover__intro {
+    max-width: 600px;
+    margin: 0 auto;
+    -ms-transform: translate(0px, -91vh);
+    -webkit-transform: translate(0px, -91vh);
+    transform: translate(0px, -91vh);
+  }
+
+  .cover__applybutton {
+    -ms-transform: translate(0px, -88vh);
+    -webkit-transform: translate(0px, -88vh);
+    transform: translate(0px, -88vh);
+  }
+
   #story1, #story2, #story3 {
     width: 100%;
     padding: 0;
@@ -675,7 +693,7 @@ table, th, td {
 	}
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px) {
 	h1 {
     font-size: 48px;
     line-height: 60px;
@@ -692,6 +710,26 @@ table, th, td {
 	.cover__headline {
     margin-bottom: 10px;
 	}
+
+  #header__desktop {
+    display: none;
+  }
+
+  #header__mobile {
+    display: inline;
+  }
+
+  .cover__intro {
+    -ms-transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+
+  .cover__applybutton {
+    -ms-transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
 
   .pic3 {
     -ms-transform: translate(0px, 0px);

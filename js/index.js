@@ -35,36 +35,34 @@ Boom.init = function() {
 
     scene = new THREE.Scene()
 
-    camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 1, 10000 )
-    camera.position.z = 300
-    camera.position.x = 0
-    camera.position.y = 0
+    camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 1, 10000);
+    camera.position.z = 350;
+    camera.position.x = window.innerWidth/1.55;
+    camera.position.y = -210;
+
+    console.log('camera ' , camera)
 
 
-    renderer = new THREE.CSS3DRenderer()
+    renderer = new THREE.CSS3DRenderer();
     renderer.sortObjects = false;
-    renderer.setSize( window.innerWidth, window.innerHeight )
-    renderer.domElement.classList.add('three')
-    document.body.appendChild( renderer.domElement )
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.domElement.classList.add('three');
+    document.getElementById("header__desktop").appendChild(renderer.domElement);
 
-    window.addEventListener('resize', function(){
+    window.addEventListener('resize', function() {
         camera.aspect = window.innerWidth / window.innerHeight
         camera.updateProjectionMatrix()
-        renderer.setSize( window.innerWidth, window.innerHeight )
-        renderer.render( scene, camera )
+        renderer.setSize(window.innerWidth, window.innerHeight)
+        renderer.render(scene, camera)
     })
 }
 
 /*
-|
 | Random number functions
-|
 */
 function getRandomArbitrary(min, max) {
     /*
-    |
     | Returns a random number between two other numbers
-    |
     */
     return Math.random() * (max - min) + min
 }
@@ -116,8 +114,8 @@ function makeRandomNegative(number){
         this.cRow = Math.floor(this.gridIndex / opts.rows)
         this.cCol = Math.floor(this.gridIndex % opts.rows)
 
-        this.x = (this.cCol * this.tileWidth)
-        this.y = -(this.cRow * this.tileHeight)
+        this.x = (this.cCol * this.tileWidth);
+        this.y = -(this.cRow * this.tileHeight);
         this.initCanvas()
         THREE.CSS3DObject.call(this, this.element)
         this.setStartPosition()
@@ -202,7 +200,7 @@ function makeRandomNegative(number){
         ctx.lineTo(this.tileWidth, this.tileHeight)
         ctx.fill()
         ctx.clip()
-        ctx.drawImage(this.sourceCanvas, -this.x , this.y )
+        ctx.drawImage(this.sourceCanvas, -this.x, this.y )
     }
 
     p.setStartPosition = function(){
@@ -260,9 +258,7 @@ function triangulate(total){
 
 
 /*
-|
 | Base Canvas Draw Logic
-|
 */
 function getCanvasContext(id){
     var canvas = document.getElementById(id)
@@ -281,10 +277,10 @@ function loadImage(src, width, height,cb){
 
 function drawImageToCanvas(canvas, img){
     var image = loadImage(img, 0, 0,function(){
-        canvas.drawImage(image, -150, 0 )
+        canvas.drawImage(image, 0, 0 )
 
         var canvas3d = new THREE.CSS3DObject(document.getElementById('base-canvas'))
-        canvas3d.position.set(15,-37,0)
+        canvas3d.position.set(128,-37,0)
         scene.add(canvas3d)
 
         tl.add(TweenMax.to(canvas3d.element, 0.5, {
@@ -311,16 +307,16 @@ Scroller.getPageHeight = function(){
 }
 
 Scroller.getScroll = function(){
-    return window.pageYOffset
+    return window.pageYOffset;
 }
 
 Scroller.calculatePerc = function(){
-   var percent = this.distance * 100 / this.height
-   var round = percent.toFixed(4)
+   var percent = this.distance * 100 / this.height;
+   var round = percent.toFixed(4);
 
     this.setTimeline()
 
-    this.percent = round / 100
+    this.percent = round / 100;
     if(this.percent > 1 ){
         this.percent = 1
     } else if(this.percent < 0){
@@ -351,8 +347,7 @@ Scroller.init = function(){
 
 var mainCanvas = getCanvasContext('base-canvas');
 drawImageToCanvas(mainCanvas, 'img/theme__title.png');
-// drawImageToCanvas(mainCanvas, 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/152724/big_boom_arrow.png')
-
+console.log(mainCanvas);
 
 
 // Kick everything off
