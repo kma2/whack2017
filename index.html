@@ -20,25 +20,48 @@
 		<!-- STYLESHEETS -->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	</head>
 	<body>
 		<div class="background"></div>
 
-		<section class="cover">
+		<!-- Navigation -->
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand page-scroll" href="#page-top">
+						<a class="page-scroll" href="#register"><img id="nav__logo" class="logo__image" src="img/logo.png" alt="WHACK logo" style="width:9.5%"></a>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+					<ul class="nav navbar-nav">
+						<li><a class="page-scroll" href="#about">About</a></li>
+						<li><a class="page-scroll" href="#joinus">Join Us</a></li>
+						<li><a class="page-scroll" href="#schedule">Schedule</a></li>
+						<li><a class="page-scroll" href="#faq">FAQ</a></li>
+						<li><a class="page-scroll" href="#sponsors">Sponsors</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section id="register" class="cover">
 			<!-- shatter effect
 			<div class="base__canvas"><canvas width="490" height="313" id="base-canvas"></canvas></div> -->
 			<div class="cover__container">
-				<a href="#"><img class="logo__image" src="img/logo.png" alt="WHACK logo"></a>
+				<!-- <div id="cover__logo"><img class="logo__image" src="img/logo.png" alt="WHACK logo"></div> -->
+				<br><br>
 				<h5>whack presents</h5>
+				<h5></h5>
 				<h1 class="cover__headline"> hacking the <br> glass ceiling </h1>
-				<h4 class="cover__intro"> February 11-12, 2017 at Wellesley College </h4>
+				<h4 class="cover__intro"> WHACK Spring 2017  |  February 11-12, 2017 at Wellesley College </h4>
 				<a href="register.html"><button class="wiggle-me"> Register Now </button></a>
 			</div>
 		</section>
 
-		<section class="work">
+		<section id="about" class="work">
 			<div class="content__section1">
 				<div class="content__text">
 					<h3 class="title"> WHACK is a community that supports women in tech. </h3>
@@ -73,7 +96,7 @@
 				</div>
 			</div>
 
-			<div class="content__section3">
+			<div id="joinus" class="content__section3">
 				<div class="content__text">
 					<h3 class="title"> Join Us! </h3>
 					<div class="get__involved">
@@ -101,7 +124,7 @@
 				</div>
 			</div>
 
-			<div class="content__section4">
+			<div id="faq" class="content__section4">
 				<div class="content__text">
 					<h3 class="title"> Frequently Asked... </h3>
 					<div class="faq-row">
@@ -155,7 +178,7 @@
 				</div>
 			</div>
 
-			<div class="content__section5">
+			<div id="schedule" class="content__section5">
 				 <div class="content__text">
 					<h3 class="title"> Schedule </h3>
 					<div class="schedule__container">
@@ -267,7 +290,7 @@
 				</div>
 			</div>
 
-			<div class="content__section6">
+			<div id="sponsors" class="content__section6">
 				<div class="content__text">
 					<h3 class="title"> Past Sponsors </h3>
 					<h4 class="description sponsors"> Interested in sponsoring? <a href="sponsorship.html"> Learn more here.</a> </h4>
@@ -305,9 +328,6 @@
 						<h4 class="description sponsors"> We are a student-run event organized with the support of Major League Hacking, the Computer Science Club, and the Department of Computer Science. <h4>
 						<a href="https://mlh.io/"><img src="img/partner-logos/mlh-logo.png" alt="MLH" class="partners wiggle-me"></a>
 						<a href="https://www.facebook.com/Wellesley-CS-Club-856871510992038"><img src="img/partner-logos/cs-club.jpg" alt="Computer Science Club" class="partners wiggle-me"></a>
-            <!-- <a href="http://www.pih.org/"><img src="img/partner-logos/PIH.png" alt="Uplift" class="partners"></a>
-            <a href="http://uplifttogether.org"><img src="img/partner-logos/uplift.jpg" alt="Partners in Health" class="partners"></a>
-						<a href="http://www.wellesley.edu/disability"><img src="img/partner-logos/disabilityservices.png" alt="MLH" class="partners"></a> -->
 	        </div>
 				</div>
 			</div>
@@ -320,15 +340,15 @@
 		</footer>
 
 		<!-- SCRIPTS -->
+		<script src="js/jquery.js"> </script>
+		<script src="js/bootstrap.min.js"> </script>
+
 		<!-- shatter effect
 		<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/152724/three.min.js'></script>
 		<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/152724/CSS3DRenderer.js'></script>
 		<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/152724/TimelineMax.min.js'></script>
 		<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/152724/TweenMax.min.js'></script>
     <script src="js/index.js"></script> -->
-
-		<!-- <script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/jquery-ui-1.11.4.min.js"></script> -->
 
  	</body>
 </html>
