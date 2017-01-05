@@ -273,7 +273,11 @@ button {
 
 .navbar {
   padding-top: 2px;
-  background-color: rgba(74, 78, 110, .95);
+  background-color: rgba(67, 71, 102, 0.9);
+}
+
+.navbar-header {
+  width: 70px;
 }
 
 #nav__logo {
@@ -282,12 +286,13 @@ button {
 }
 
 .navbar a {
-  color: #D0D2DF;
+  color: rgba(250, 250, 250, 0.8);
+  font-size: 0.9em;
 }
 
 .navbar-custom .nav li a:hover {
-    background-color: transparent;
-    color: white;
+  background-color: transparent;
+  color: white;
 }
 
 
@@ -304,10 +309,6 @@ button {
   text-align: center;
 }
 
-/*.base-canvas {
-  display: inline-block;
-}*/
-
 
 /* STORIES */
 
@@ -318,9 +319,9 @@ button {
 }
 
 .story {
-  -ms-transform: translate(0px, -60px);
-  -webkit-transform: translate(0px, -60px);
-  transform: translate(0px, -60px);
+  -ms-transform: translate(0px, -80px);
+  -webkit-transform: translate(0px, -80px);
+  transform: translate(0px, -80px);
 }
 
 .story p {
@@ -394,7 +395,6 @@ img.story__photo {
 }
 
 .card-body {
-  /*color: #E4E5EA;*/
   font-size: 0.8em;
   line-height: 1.7;
   font-weight: 400;
@@ -573,8 +573,8 @@ footer {
   max-height: 85px;
   margin: auto;
   padding-bottom: 15px;
-  -ms-transform: translate(-5px, 0px); /* IE 9 */
-  -webkit-transform: translate(-5px, 0px); /* Safari */
+  -ms-transform: translate(-5px, 0px);
+  -webkit-transform: translate(-5px, 0px);
   transform: translate(-5px, 0px);
 }
 
@@ -656,10 +656,6 @@ table, th, td {
     width: 80vw;
   }
 
-  #cover__logo {
-    display: none;
-  }
-
   .cover {
     height: 90vh;
     padding: 0 30px 0 30px;
@@ -710,24 +706,20 @@ table, th, td {
     display: none;
   }
 
-  .cover__logo.logo__image {
-    display: inline;
-  }
-
 	.cover__headline {
     margin-bottom: 10px;
 	}
 
   .story {
-    -ms-transform: translate(0px, 0px); /* IE 9 */
-    -webkit-transform: translate(0px, 0px); /* Safari */
+    -ms-transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
   }
 
   .story p {
     width: 85%;
-    -ms-transform: translate(0px, 0px); /* IE 9 */
-    -webkit-transform: translate(0px, 0px); /* Safari */
+    -ms-transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
   }
 
@@ -740,4 +732,16 @@ table, th, td {
     -webkit-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
   }
+}
+
+@media screen and (min-width: 300px) {
+    #cover__logo {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #cover__logo {
+        visibility: hidden;
+    }
 }
