@@ -2,21 +2,21 @@
   font-family: 'Circular';
   src: url("CircularStd-Book.otf") format("opentype");
   font-weight: 400;
-  font-style: normal;
+  /*font-style: normal;*/
 }
 
 @font-face {
   font-family: 'Circular';
   src: url("CircularStd-Bold.otf") format("opentype");
   font-weight: 600;
-  font-style: normal;
+  /*font-style: normal;*/
 }
 
 @font-face {
   font-family: 'Circular';
   src: url("CircularStd-Black.otf") format("opentype");
   font-weight: 700;
-  font-style: normal;
+  /*font-style: normal;*/
 }
 
 html {
@@ -25,14 +25,9 @@ html {
 }
 
 body {
-  /*min-height: 20000px;
-  overflow: scroll;
-  padding: 0;
-  margin:0;*/
-
   background: #343653;
 	position: relative;
-	font-family: "Circular", "lato", "helvetica neue", "helvetica", "arial", sans-serif;
+	font-family: "Circular", "helvetica", sans-serif;
 	font-style: normal;
 	line-height: 1.5;
 	font-size: 20px;
@@ -44,17 +39,17 @@ body {
 	overflow-x: hidden;
 }
 
-* {
+/** {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
-}
+}*/
 
 a {
   color: #FB627A;
   font-weight: 600;
-	text-decoration: none;
+	/*text-decoration: none;*/
 }
 
 .content__section4 a {
@@ -120,15 +115,15 @@ p {
 button {
   display: inline-block;
   border: none;
-  white-space: nowrap;
+  /*white-space: nowrap;
   box-sizing: border-box;
   outline: 0;
-  background: 0 0;
+  background: 0 0;*/
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 800;
-  padding: 10px 30px;
+  font-weight: 700;
+  padding: 11px 30px;
   color: #FFFFFF;
   background-color: #FB627A;
   border-radius: 30px;
@@ -140,7 +135,7 @@ button {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	top: 0;
+	/*top: 0;*/
 	z-index: -1;
 }
 
@@ -293,6 +288,17 @@ button {
 .navbar-custom .nav li a:hover {
   background-color: transparent;
   color: white;
+}
+
+a#mlh-trust-badge {
+  display:block;
+  max-width:100px;
+  min-width:60px;
+  position:fixed;
+  right:50px;
+  top:0;
+  width:6%;
+  z-index:10000;
 }
 
 
@@ -736,7 +742,7 @@ table, th, td {
 
 @media screen and (min-width: 300px) {
     #cover__logo {
-        display: inline;
+      display: inline;
     }
 }
 
