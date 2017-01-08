@@ -1,0 +1,110 @@
+.sponsorship-tiers h5 {
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.tier {
+  margin-top: 5vh;
+  margin-bottom: 15vh;
+  width: 27%;
+  float: left;
+  height: 100px;
+  margin-right: 35px;
+}
+
+.tier p {
+  color: #2E3044;
+  font-size: 0.9em;
+  padding-left: 35px;
+  padding-right: 25px;
+}
+
+span {
+  color: white;
+  padding: 8px 20px;
+}
+
+.bronze-container {
+  background-color: rgba(55, 189, 239, 0.17);
+  padding-bottom: 5vh;
+}
+
+#bronze {
+  background-color: rgba(55, 189, 239, 1);
+}
+
+.silver-container {
+  background-color: rgba(7, 206, 194, 0.17);
+  padding-bottom: 13vh;
+}
+
+#silver {
+  background-color: rgba(7, 206, 194, 1);
+}
+
+.gold-container {
+  background-color: rgba(255, 201, 115, 0.17);
+  padding-bottom: 17vh;
+}
+
+#gold {
+  background-color: rgba(255, 201, 115, 1);
+}
+
+td {
+  text-align: right;
+  width: 60px;
+  font-weight: 600;
+}
+
+td#perk {
+  width: 25vw;
+  font-weight: 500;
+}
+
+td#bronze-perk {
+  background-color: rgba(55, 189, 239, 0.2);
+}
+
+td#silver-perk {
+  background-color: rgba(7, 206, 194, 0.25);
+}
+
+td#gold-perk {
+  background-color: rgba(255, 201, 115, 0.25);
+}
+
+/* mobile */
+@media screen and (max-width: 500px) {
+  .sponsorship-tiers {
+    font-size: 0.85em;
+  }
+
+  .sponsorship-tiers {
+    margin-bottom: 88vh;
+  }
+
+  .tier {
+    margin-bottom: 2vh;
+    width: 100%;
+  }
+
+  .tier p {
+    padding-top: 10px;
+    padding-left: 25px;
+  }
+
+  .bronze-container {
+    padding-bottom: 1vh;
+  }
+
+  .silver-container {
+    padding-bottom: 5vh;
+  }
+
+  .gold-container {
+    padding-bottom: 9vh;
+  }
+}
