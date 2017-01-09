@@ -138,6 +138,10 @@ hr {
   margin-bottom: 10vh;
 }
 
+img {
+  pointer-events: none; /* disable dragging images */
+}
+
 
 /* BACKGROUND SHAPES */
 
@@ -203,7 +207,7 @@ footer {
 /* SOCIAL ICONS */
 
 .icon__container {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .social__icon {

@@ -10,20 +10,20 @@
 		<!-- STYLESHEETS -->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/page-sponsorship.css">
-		<link rel="stylesheet" type="text/css" href="css/animation.css">
 
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/animation.css">
+		<link rel="stylesheet" type="text/css" href="css/page-sponsorship.css">
 	</head>
+
 	<body>
 		<img class="shape4" src="img/shape4.png">
-		<section class="sponsorship">
+		<section id="sponsorship">
 			<div class="content__text">
 				<h3 class="title"> Sponsoring WHACK </h3>
-				<p class="description"> Interested in sponsoring? Have questions? <br> Contact us at <a href="mailto:hack@wellesley.edu"> hack@wellesley.edu </a></p>
+				<p class="description"> Interested in sponsoring? Have questions? <br> Contact us at <a href="mailto:hack@wellesley.edu" style="text-decoration:none"> hack@wellesley.edu </a></p>
 				<h3> About </h3>
 				<p class="description"> This semester, WHACK will take place at Wellesley College on the weekend of February 11-12, 2017. Approximately 100 undergraduates will come together for 30 hours to develop innovative web, mobile and hardware projects. Our goal is to create a supportive environment that empowers women in technology through intimate mentor-based experiences. At WHACK, students are encouraged to explore new technologies and their creative potential. </p>
-
 				<h3> Why sponsor? </h3>
 				<ul style="list-style-type:square">
 				  <li> Meet excited, aspiring, and talented students! </li>
@@ -31,18 +31,18 @@
 					<li> Present your products and APIs, and watch students unleash their creativity </li>
 				  <li> Give your employees an opportunity to mentor young women, and inspire them to keep pursuing opportunities in tech </li>
 				</ul>
-				<br>
+				<img id="hackathon-photo" class="hideme" src="img/hackathon-photos/venue.jpg" alt="tishman commons">
 				<h3 class="hideme"> Sponsorship Tiers </h3>
 				<div class='sponsorship-tiers'>
-			    <div class="tier bronze-container hideme">
+			    <div class="tier hideme bronze-wrapper">
 						<h5><span id="bronze"> Bronze: $1k </span></h5>
 						<p> or 1 mentor <br> or 1 meal </p>
 					</div>
-			    <div class="tier silver-container hideme">
+			    <div class="tier hideme silver-wrapper">
 						<h5><span id="silver"> Silver: $2k </span></h5>
 						<p> or 2 mentors <br> or 2 meals <br> or a combination of the above </p>
 					</div>
-					<div class="tier gold-container hideme">
+					<div class="tier hideme gold-wrapper">
 						<h5><span id="gold"> Gold: $3k+ </span></h5>
 						<p> or 3+ mentors <br> or 3+ meals <br> or a combination of the above </p>
 					</div>
@@ -112,9 +112,19 @@
 			</div>
 		</section>
 
+		<footer>
+			<div class="icon__container">
+				<a target="_blank" title="email" href="mailto:hack@wellesley.edu"><img class="social__icon" alt="mail" src="img/social-icons/mail.png" border=0></a>
+				<a target="_blank" title="facebook" href="http://www.facebook.com/pages/WHACK/1667107370201246?fref=ts"><img class="social__icon" alt="facebook" src="img/social-icons/facebook.png" border=0></a>
+				<a target="_blank" title="twitter" href="http://www.twitter.com/wellesleyhack"><img class="social__icon" alt="twitter" src="img/social-icons/twitter.png" border=0></a>
+				<a target="_blank" title="instagram" href="http://www.instagram.com/wellesleyhack"><img class="social__icon" alt="instagram" src="img/social-icons/instagram.png" border=0></a>
+			</div>
+			<h5 class="footer__message"> Made with love by the 2017 whack committee</h5>
+		</footer>
+
 		<!-- SCRIPTS -->
+		<script src="js/bootstrap.min.js"> </script>
 		<script src="js/jquery.js"> </script>
 		<script src="js/index.js"> </script>
-
  	</body>
 </html>
