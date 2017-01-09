@@ -253,6 +253,10 @@ button {
   animation: wiggle .4s 2;
 }
 
+.hideme {
+  opacity:0;
+}
+
 
 /* NAVIGATION BAR */
 
