@@ -41,6 +41,11 @@ a {
   font-weight: 600;
 }
 
+a:hover {
+  color: #FB627A;
+  text-decoration: none;
+}
+
 .content__section4 a {
   color: #FF8B89;
 }
@@ -299,9 +304,9 @@ button {
 }
 
 .shape1 {
-  -ms-transform: translate(0px, 50px);
-  -webkit-transform: translate(0px, 50px);
-  transform: translate(0px, 50px);
+  -ms-transform: translate(0px, 80px);
+  -webkit-transform: translate(0px, 80px);
+  transform: translate(0px, 80px);
 }
 
 .shape2 {
