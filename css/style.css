@@ -120,7 +120,6 @@ button {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	/*top: 0;*/
 	z-index: -1;
 }
 
@@ -137,6 +136,7 @@ button {
 .content__section2, .content__section6 {
   background-image: url(../img/pattern4.png);
   color: #2E3044;
+  z-index: -1;
 }
 
 .content__section1:before, .content__section3:before, .content__section5:before {
@@ -287,6 +287,33 @@ button {
   max-width: 1080px;
   margin: 0 auto;
   text-align: center;
+}
+
+/* ABOUT */
+
+.shape1, .shape2, .shape3 {
+  position:absolute;
+  width:100%;
+  z-index: 1;
+}
+
+.shape2 {
+  -ms-transform: translate(20px, 50px);
+  -webkit-transform: translate(20px, 50px);
+  transform: translate(20px, 50px);
+}
+
+.shape3 {
+  -ms-transform: translate(-50px, 0px);
+  -webkit-transform: translate(-50px, 0px);
+  transform: translate(-50px, 0px);
+}
+
+
+@media only screen and (max-width:750px){
+  .shape1, .shape2, .shape3 {
+    width: inherit;
+  }
 }
 
 
@@ -670,8 +697,8 @@ table, th, td {
 
 @media all and (max-width: 600px) {
 	h1 {
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 50px;
 	}
 
 	h2 {
@@ -681,6 +708,10 @@ table, th, td {
 	h3 {
 		font-size: 20px;
 	}
+
+  .title {
+    font-size: 1.8em;
+  }
 
   .navbar {
     display: none;
