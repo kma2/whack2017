@@ -1,0 +1,58 @@
+@-ms-keyframes wiggle {
+  0% {
+    -ms-transform: rotate(2deg);
+  }
+  50% {
+    -ms-transform: rotate(-2deg);
+  }
+  100% {
+    -ms-transform: rotate(2deg);
+  }
+}
+
+@-moz-keyframes wiggle {
+  0% {
+    -moz-transform: rotate(2deg);
+  }
+  50% {
+    -moz-transform: rotate(-2deg);
+  }
+  100% {
+    -moz-transform: rotate(2deg);
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(2deg);
+  }
+  50% {
+    -webkit-transform: rotate(-2deg);
+  }
+  100% {
+    -webkit-transform: rotate(2deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+.wiggle-me:hover {
+  -ms-animation: wiggle .4s 2;
+  -moz-animation: wiggle .4s 2;
+  -webkit-animation: wiggle .4s 2;
+  animation: wiggle .4s 2;
+}
+
+.hideme {
+  opacity: 0;
+}

@@ -1,3 +1,34 @@
+/* SPONSORSHIP & MENTORSHIP PAGES */
+
+section.sponsorship {
+  background-image: url(../img/pattern2.png);
+  background-color: white;
+  color: #2E3044;
+  padding: 100px 0px 150px 0;
+}
+
+p.description {
+  color: #2E3044;
+}
+
+th, td {
+  padding: 15px 50px 15px 0;
+  text-align: center;
+}
+
+th#perk, td#perk {
+  text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
 .sponsorship-tiers h5 {
   font-size: 1em;
   font-weight: 700;
