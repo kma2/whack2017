@@ -303,7 +303,7 @@ button {
   z-index: 1;
 }
 
-.shape1 {
+.shape1, .shape4 {
   -ms-transform: translate(0px, 80px);
   -webkit-transform: translate(0px, 80px);
   transform: translate(0px, 80px);
@@ -321,12 +321,6 @@ button {
   -ms-transform: translate(83vw, 50px);
   -webkit-transform: translate(83vw, 50px);
   transform: translate(83vw, 50px);
-}
-
-.shape4 {
-  -ms-transform: translate(-50px, 0px);
-  -webkit-transform: translate(-50px, 0px);
-  transform: translate(-50px, 0px);
 }
 
 
