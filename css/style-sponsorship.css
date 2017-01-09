@@ -28,7 +28,7 @@ span {
 
 .bronze-container {
   background-color: rgba(55, 189, 239, 0.17);
-  padding-bottom: 5vh;
+  padding-bottom: 40px;
 }
 
 #bronze {
@@ -37,7 +37,7 @@ span {
 
 .silver-container {
   background-color: rgba(7, 206, 194, 0.17);
-  padding-bottom: 13vh;
+  padding-bottom: 90px;
 }
 
 #silver {
@@ -46,7 +46,7 @@ span {
 
 .gold-container {
   background-color: rgba(255, 201, 115, 0.17);
-  padding-bottom: 17vh;
+  padding-bottom: 110px;
 }
 
 #gold {
