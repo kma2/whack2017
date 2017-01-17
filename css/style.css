@@ -211,7 +211,8 @@ footer {
 }
 
 .social__icon {
-  max-height: 35px;
+  height: 35px;
+  width: auto;
 }
 
 

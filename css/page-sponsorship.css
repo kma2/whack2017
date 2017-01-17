@@ -1,6 +1,6 @@
 /* SPONSORSHIP & MENTORSHIP PAGES */
 
-section#sponsorship {
+section.sponsorship {
   background-image: url(../img/pattern2.png);
   background-color: white;
   color: #2E3044;
@@ -12,7 +12,7 @@ section#sponsorship {
   background-color: #5C6081;
 }
 
-#hackathon-photo {
+.hackathon-photo {
   width: 80%;
   border-radius: 3px;
   margin: 70px 0px;
@@ -27,7 +27,7 @@ th, td {
   text-align: center;
 }
 
-th#perk, td#perk {
+th.perk, td.perk {
   text-align: left;
 }
 
@@ -101,20 +101,20 @@ td {
   font-weight: 600;
 }
 
-td#perk {
+td.perk {
   width: 25vw;
   font-weight: 500;
 }
 
-td#bronze-perk {
+td.bronze-perk {
   background-color: rgba(55, 189, 239, 0.2);
 }
 
-td#silver-perk {
+td.silver-perk {
   background-color: rgba(7, 206, 194, 0.25);
 }
 
-td#gold-perk {
+td.gold-perk {
   background-color: rgba(255, 201, 115, 0.25);
 }
 
