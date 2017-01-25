@@ -219,14 +219,14 @@ h4.sponsors {
 }
 
 .silver__sponsors {
-  max-width: 180px;
+  max-width: 220px;
   max-height: 100px;
   padding: 18px;
 }
 
 .bronze__sponsors {
   max-width: 200px;
-  max-height: 90px;
+  max-height: 70px;
   padding: 15px;
 }
 
@@ -235,8 +235,6 @@ h4.sponsors {
 }
 
 .partners {
-  /*max-width: 180px;
-  max-height: 90px;*/
   height: 90px;
   width: auto;
   padding: 18px;
@@ -429,5 +427,11 @@ button.outline.blue {
 @media screen and (min-width: 600px) {
     #cover__logo {
         visibility: hidden;
+    }
+
+    .day#sunday__container {
+      -ms-transform: translate(70px, 0px);
+      -webkit-transform: translate(70px, 0px);
+      transform: translate(70px, 0px);
     }
 }
