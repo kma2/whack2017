@@ -53,8 +53,7 @@ body {
   transition: all 1s ease;
 }
 
-
-/* detailed schedule */
+/* schedule.html */
 .day {
   width: 100%;
   margin-bottom: 5%;
@@ -69,20 +68,23 @@ body {
   color: black;
 }
 
-.time {
-  width: 15%;
-  font-weight: 400;
+.event-time {
+  color: black;
 }
 
 .event {
-  margin-left: 15%;
   margin-bottom: 30px;
   text-align: left;
   display: block;
 }
 
+.details {
+  width: 80%;
+  padding-left: 0;
+}
+
 .event__title {
-  width: 200%;
+  width: 100%;
   font-size: 1em;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -92,15 +94,37 @@ body {
 
 .event__location {
   font-size: 0.9em;
-  width: 200%;
+  margin-bottom: 15px;
 }
 
-.event__description {
-  width: 200%;
+/* mentors.html */
+.divTable{
+	display: table;
+	width: 85%;
 }
-/* end of detailed schedule */
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid #E0E0E0;
+	display: table-cell;
+}
+
+.divTableCell {
+  padding: 20px;
+}
+
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
 
 
+/* Responsiveness */
 @media all and (max-width: 641px) {
   .date {
     width: 100%;
@@ -131,7 +155,7 @@ body {
   #main {
   	width:calc(100% - 300px);
   	float: right;
-    padding: 50px 0 0 50px;
+    padding: 50px 0 0 70px;
   }
 }
 
