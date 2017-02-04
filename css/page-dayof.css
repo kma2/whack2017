@@ -135,6 +135,10 @@ ul li {
   margin-bottom: 15px;
 }
 
+#lulu-navigation p.room-name {
+  font-size: 1em;
+}
+
 /* mentors.html */
 .divTable{
 	display: table;
