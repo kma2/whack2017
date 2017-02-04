@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding-bottom: 100px;
-  background-color: white;
+  background-color: #FBFBFB; /* light gray */
 }
 
 h5, p {
@@ -23,6 +23,11 @@ ul li {
 
 .text-group {
   margin-bottom: 30px;
+}
+
+.text-group h3 {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 #logo {
