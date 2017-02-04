@@ -4,6 +4,23 @@ body {
   background-color: white;
 }
 
+h5, p {
+  color: black;
+  text-align:left;
+}
+
+h5 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.text-group {
+  margin-bottom: 30px;
+}
+
 #logo {
   width:28%;
   margin-top: 60px;
