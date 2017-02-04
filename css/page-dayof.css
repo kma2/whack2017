@@ -17,6 +17,10 @@ p {
   margin-bottom: 5px;
 }
 
+ul li {
+  font-size: 0.8em;
+}
+
 .text-group {
   margin-bottom: 30px;
 }
@@ -68,6 +72,18 @@ p {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+/* dayof.html */
+.social {
+  background-color: #FFF2DD;
+  border-radius: 5px;
+  padding: 20px 10px;
+  margin: 0 40px 20px 0;
+}
+
+.social p {
+  text-align: center;
 }
 
 /* schedule.html */
@@ -134,12 +150,19 @@ p {
   padding: 20px;
 }
 
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-	font-weight: bold;
+/* prizes */
+.prize-category {
+  border: 2px solid #37BDEF;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 40px 40px 0;
 }
 
+.prize-category h5 {
+  text-align: center;
+  font-size: 0.95em;
+  margin-bottom: 25px;
+}
 
 /* Responsiveness */
 @media all and (max-width: 641px) {
@@ -172,7 +195,7 @@ p {
   #main {
   	width:calc(100% - 300px);
   	float: right;
-    padding: 50px 0 0 70px;
+    padding: 50px 50px 0 50px;
   }
 }
 
