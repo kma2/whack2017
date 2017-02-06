@@ -106,8 +106,10 @@ ul li {
   color: black;
 }
 
-.event-time {
-  color: black;
+.event-title {
+  color: purple;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .event {
