@@ -110,12 +110,6 @@
   padding-top: 0;
 }
 
-#day-of-button {
-  background-color: transparent;
-  border: 2px solid #ED6278;
-  margin-left: 20px;
-}
-
 
 /* STORIES */
 
@@ -152,8 +146,6 @@ p.name {
 
 #story1, #story2, #story3 {
   padding: 0px 50px;
-  /*height: 100px;*/
-  /*width: auto;*/
   width: 60%;
   display: inline-block;
 }
@@ -395,11 +387,6 @@ button.outline.blue {
 	.cover__headline {
     margin-bottom: 10px;
 	}
-
-  #day-of-button, #register-now-button {
-    width: 60%;
-    margin-left: 0px;
-  }
 
   .story {
     -ms-transform: translate(0px, 0px);
